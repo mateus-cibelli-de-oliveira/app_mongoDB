@@ -10,13 +10,13 @@ exports.get = async (id) => {
     return tasks
 }
 
-exports.post = async (data) => {
+exports.post = (data) => {
     // const newData = {
     //     ...data,
     //     id: tasks[tasks.length - 1].id + 1
     // }
     const newData = {...data}
-    return await Task.create(newData)
+    return Task.create(newData)
     // tasks.push(newData)
     // return newData
 }

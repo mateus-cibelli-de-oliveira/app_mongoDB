@@ -1,4 +1,4 @@
-const mongoose = require('monsooge')
+const mongoose = require('mongoose')
 
 const taskScheme = new mongoose.Schema({
     title: {type: String, required: true, trim: true, maxlength: 150},
